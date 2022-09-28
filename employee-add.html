@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/employee-add.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    
+    <section id="menu">
+        <div class="logo">
+            <a href="Index.html">
+                <img src="images/branchX Logo.svg" alt="logo">
+            </a>
+        </div>
+
+        <div class="items">
+            <li><a href="Index.html"><img src="images/Dashboard.svg" alt="dashboard" /> Dashboard</a></li>
+            <li><a href="employees.html"><img src="images/Employee Card.svg" alt="Employees" /> Employees</a></li>
+            <li><a href="payroll.html"><img src="images/Payroll.svg" alt="Payroll" /> Payroll</a></li>
+            <li><a href="report.html"><img src="images/Reports.svg" alt="Reports" /> Reports</a></li>
+            <li><a href="support.html"><img src="images/User Guide.svg" alt="Support" /> Support</a></li>
+            <li>
+                <div id="bottom-menu">
+                    <div class="profile">
+                        <a href="my-profile.html">
+                            <img src="images/User Profile.svg">
+                            <p class="small-body">My Profile</p>
+                        </a>
+                    </div>
+                    <a id="setting-menu" href="account-setting.html">
+                        <img src="images/Settings.svg" alt="setting"></a>
+                </div>
+            </li>
+        </div>
+ 
+    </section>
+
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="close-btn" class="fa fa-bars"></i>
+                </div>
+                <div class="page-title">
+                    <h6>Employee</h6>
+                    <p class="sm-label">Employees > Add Employee</p>
+                </div>
+            </div>
+            
+            <div class="left-icon">
+                <a href="wallet.html"><img src="images/wallet.svg" alt="wallet"></a>
+                <a href="#" id="notification-popup"><img src="images/notification.svg" alt="notification"></a>
+            </div>
+        </div>
+        
+
+    <div class="content-section">
+
+    <!-- ------  Card Section  ----- -->
+
+
+        <div class="vertical-tab">
+            <div class="row">
+              <div class="col-3">
+                <div class="side-upper-menu">
+                    <h4>Add Employee Details</h4>
+                    <p class="sm-label">Use the tabs below to navigate between the different details. </p>
+                    <button class="btn active" data-target-tab="#personal"> <span class="number">1</span> Personal Details</button>
+                    <button class="btn" data-target-tab="#prfessional"><span class="number">2</span> Professional Details</button>
+                    <button class="btn" data-target-tab="#Bank-Details"><span class="number">3</span>Bank Details</button>
+                </div>
+
+              </div>
+              <div class="col-9">
+                <div class="col-9-content">
+                    <div class="item active" id="personal">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="Name">Name</label>
+                                    <input type="text" class="name" id="name" placeholder="Enter Employee Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="email" id="email" placeholder="Enter Employee Email">
+                                </div>
+                            </div>
+                            <div class="form-row-2">
+                                <p class="small-body">Gender</p>
+                                <div class="radio-content">
+                                    <div class="male-content">
+                                        <input type="radio" name="gender" id="male" value="male" checked>
+                                        <label for="male" id="male">Male</label>
+                                    </div>  
+                                    <div class="female-content">
+                                        <input type="radio" name="gender" id="female" value="female">
+                                        <label for="female" id="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="designation">Designation</label>
+                                    <select name="Bulk Update" id="designation">
+                                        <option value="volvo">designation one</option>
+                                        <option value="volvo">designation two</option>
+                                        <option value="saab">designation three</option>
+                                        <option value="opel">designation four</option>
+                                      </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="department">Department</label>
+                                    <select name="Bulk Update" id="department">
+                                        <option value="volvo">Department One</option>
+                                        <option value="volvo">Department Two</option>
+                                        <option value="saab">Department Three</option>
+                                        <option value="opel">Department Four</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="office">office</label>
+                                    <select name="Bulk Update" id="office">
+                                        <option value="volvo">Office One</option>
+                                        <option value="volvo">Office Two</option>
+                                        <option value="saab">Office Three</option>
+                                        <option value="opel">Office Four</option>
+                                      </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="date">Date of Joining</label>
+                                    <input type="date" id="date" name="date">
+                                </div>
+                            </div>
+                            <button type="submit" class="submit">SAVE DETAILS</button>
+                        </form>
+                    </div>
+                      <div class="item" id="prfessional">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="fatherName">Father’s Name</label>
+                                    <input type="text" class="fatherName" id="fatherName" placeholder="Enter Employee Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="personalEmail">Personal Email</label>
+                                    <input type="email" class="personalEmail" id="personalEmail" placeholder="Enter Employee Personal Email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="mobileNumber">Mobile Number</label>
+                                    <input type="number" class="mobileNumber" id="mobileNumber" placeholder="Enter Mobile Number">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" id="dob" name="dob">
+                                </div>
+                            </div>
+                            <div class="form-row-pan">
+                                <div class="form-group-pan">
+                                    <label for="pan">PAN</label>
+                                    <input type="text" class="pan" id="pan" placeholder="Enter PAN Number">
+                                </div>
+                            </div>
+                            <div class="form-row-address">
+                                <div class="form-group-address">
+                                    <label for="address">Current Address</label>
+                                    <input type="text" class="address" id="address" placeholder="Street Address">
+                                </div>
+                            </div>
+                            <div class="form-group-city">
+                                <input type="text" class="city" id="city" placeholder="City">
+                                <input type="text" class="pincode" id="city" placeholder="Pincode">
+                            </div>
+                            <button type="submit" class="submit">SAVE DETAILS</button>
+                        </form>
+                      </div>
+                      <div class="item" id="Bank-Details">
+                        <h5>Primary Account</h5>
+                        <form action="employee-overview.html">
+                            <div class="form-row-account">
+                                    <label for="accNumber">Account Number</label>
+                                    <input type="text" class="accNumber" id="accNumber" placeholder="Enter Account Number">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="bankName">Bank Name</label>
+                                    <input type="text" class="bankName" id="bankName" placeholder="Enter Employee Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="holderName">Account Holder Name</label>
+                                    <input type="text" class="holderName" id="holderName" placeholder="Enter Employee Personal Email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="acctype">Account Type</label>
+                                    <select name="Account Type" id="acctype">
+                                        <option value="savings">Savings</option>
+                                        <option value="current">Current</option>
+                                      </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="iifc">IIFC</label>
+                                    <input type="text" class="iifc" id="iifc" placeholder="Enter IIFC">
+                                </div>
+                            </div>
+
+                            <h5>Secondary Account</h5>
+
+                            <div class="form-row-account">
+                                <label for="accNumber">Account Number</label>
+                                <input type="text" class="accNumber" id="accNumber" placeholder="Enter Account Number">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="bankName">Bank Name</label>
+                                    <input type="text" class="bankName" id="bankName" placeholder="Enter Bank Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="holderName">Account Holder Name</label>
+                                    <input type="text" class="holderName" id="holderName" placeholder="Enter Account Holder Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="acctype">Account Type</label>
+                                    <select name="Account Type" id="acctype">
+                                        <option value="savings">Savings</option>
+                                        <option value="current">Current</option>
+                                      </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="iifc">IIFC</label>
+                                    <input type="text" class="iifc" id="iifc" placeholder="Enter IIFC">
+                                </div>
+                            </div>
+                            <button type="submit" class="submit">SAVE DETAILS</button>
+                        </form>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div id="popup-container">
+            <div class="close-popup">
+                <span id="close-popup-btn">close</span>
+            </div>
+            <div class="popup-top-header">
+                <h6>Notifications</h6>
+                <a href="notifications.html">View All Notifications</a>
+            </div>
+
+            <div class="popuptabs">
+                <input type="radio" id="tabfree" name="popuptabs" checked="checked">
+                <label for="tabfree">All</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">All last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <input type="radio" id="tabsilver" name="popuptabs">
+                <label for="tabsilver">Updates</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">Updates last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <input type="radio" id="tabgold" name="popuptabs">
+                <label for="tabgold">Promotions</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">Promo last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+        
+    </section>
+
+
+    <script>
+
+        // Vertical Tabs For Fomrs
+
+
+    const btns = document.querySelectorAll("[data-target-tab]");
+
+        btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        btns.forEach((btn) => btn.classList.remove("active"));
+
+        const items = document.querySelectorAll(".item");
+
+        items.forEach((item) => item.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelector(btn.dataset.targetTab).classList.add("active");
+  });
+});
+
+
+
+        // Mobile menu icons
+
+        $('#close-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+
+
+
+        // Popup modal section
+
+        $("#notification-popup").click(function(){
+                $("#popup-container").show();
+            })
+
+        $("#close-popup-btn").click(function(){
+                $("#popup-container").hide();
+            })
+
+        // $("ul li").click(function(){
+        //     $(this).addClass("selected").siblings().
+        //     removeClass("selected");
+        //     $(".pop-title-content > p").hide();
+        //     $($(this).data("value")).fadeIn();
+        // });
+
+    </script>
+
+</body>
+</html>

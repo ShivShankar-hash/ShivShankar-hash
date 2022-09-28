@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/employee-pay-slip.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    
+    <section id="menu">
+        <div class="logo">
+            <a href="Index.html">
+                <img src="images/branchX Logo.svg" alt="logo">
+            </a>
+        </div>
+
+        <div class="items">
+            <li><a href="Index.html"><img src="images/Dashboard.svg" alt="dashboard" /> Dashboard</a></li>
+            <li><a href="employees.html"><img src="images/Employee Card.svg" alt="Employees" /> Employees</a></li>
+            <li><a href="payroll.html"><img src="images/Payroll.svg" alt="Payroll" /> Payroll</a></li>
+            <li><a href="report.html"><img src="images/Reports.svg" alt="Reports" /> Reports</a></li>
+            <li><a href="support.html"><img src="images/User Guide.svg" alt="Support" /> Support</a></li>
+            <li>
+                <div id="bottom-menu">
+                    <div class="profile">
+                        <a href="my-profile.html">
+                            <img src="images/User Profile.svg">
+                            <p class="small-body">My Profile</p>
+                        </a>
+                    </div>
+                    <a id="setting-menu" href="account-setting.html">
+                        <img src="images/Settings.svg" alt="setting"></a>
+                </div>
+            </li>
+        </div>
+ 
+    </section>
+
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="close-btn" class="fa fa-bars"></i>
+                </div>
+                <div class="page-title">
+                    <h6>Employess</h6>
+                    <p class="sm-label">Employees > Shiv Shankar > Payslips</p>
+                </div>
+            </div>
+            
+            <div class="left-icon">
+                <a href="wallet.html"><img src="images/wallet.svg" alt="wallet"></a>
+                <a href="#" id="notification-popup"><img src="images/notification.svg" alt="notification"></a>
+            </div>
+        </div>
+        
+
+    <div class="content-section">
+
+    <!-- ------  Card Section  ----- -->
+
+        <div class="employee-content">
+
+            <div class="emp-table-section">
+                
+                <div class="makepayout-top-section">
+                    <div class="id-section">
+                        <a href="employee-overview.html">
+                            <img src="images/Arrow.svg" alt="" id="arrow"></a>
+                        <div class="small-body">
+                            <button type="button" id="payout-id">
+                                <img src="images/wallet.svg" alt=""> ID: 10568
+                            </button>
+                        </div>
+                        <h4>June 2019 Payout</h4>
+                    </div>
+                    <div class="top-btn-section">
+                        <div class="btn-section">
+                            <form id="emp-select">
+                                <select name="Download Multiple" id="emp-updates">
+                                  <option value="volvo">Download Multiple</option>
+                                  <option value="volvo">Approve</option>
+                                  <option value="saab">Regenerate</option>
+                                  <option value="opel">Run Payout</option>
+                                  <option value="opel">On Hold</option>
+                                </select>
+                              </form>
+                        </div> 
+                    </div>
+                </div>
+
+
+                <div class="emp-table">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                <div class="first-cell">
+                                    <input id="checkbox" type="checkbox">
+                                    Period
+                                </div>
+                                </th>
+                                <th>CTC (INR)</th>
+                                <th>Variable Pay</th>
+                                <th>Loss of Pay</th>
+                                <th>Tax Amount</th>
+                                <th>Net Payable</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        June 2019 
+                                    </div></td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td>Rs 39,000</td>
+                                <td>Rs 39,000</td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td id="department">
+                                    <p id="department-cell">Pending</p>
+                                </td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-pay-slip-details.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        June 2019 
+                                    </div></td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td>Rs 39,000</td>
+                                <td>Rs 39,000</td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td id="department">
+                                    <p id="department-cell">Pending</p>
+                                </td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-pay-slip-details.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        June 2019 
+                                    </div></td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td>Rs 39,000</td>
+                                <td>Rs 39,000</td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td>Rs 3.6 Lacs</td>
+                                <td id="department">
+                                    <p id="department-cell">Pending</p>
+                                </td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-pay-slip-details.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                        </thead>
+                      </table>  
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div id="popup-container">
+            <div class="close-popup">
+                <span id="close-popup-btn">close</span>
+            </div>
+            <div class="popup-top-header">
+                <h6>Notifications</h6>
+                <a href="notifications.html">View All Notifications</a>
+            </div>
+
+            <div class="popuptabs">
+                <input type="radio" id="tabfree" name="popuptabs" checked="checked">
+                <label for="tabfree">All</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">All last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <input type="radio" id="tabsilver" name="popuptabs">
+                <label for="tabsilver">Updates</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">Updates last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <input type="radio" id="tabgold" name="popuptabs">
+                <label for="tabgold">Promotions</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">Promo last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+        
+    </section>
+
+
+    <script>
+
+        // Mobile menu icons
+
+        $('#close-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+
+
+
+        // Popup modal section
+
+        $("#notification-popup").click(function(){
+                $("#popup-container").show();
+            })
+
+        $("#close-popup-btn").click(function(){
+                $("#popup-container").hide();
+            })
+
+        // $("ul li").click(function(){
+        //     $(this).addClass("selected").siblings().
+        //     removeClass("selected");
+        //     $(".pop-title-content > p").hide();
+        //     $($(this).data("value")).fadeIn();
+        // });
+
+    </script>
+
+</body>
+</html>

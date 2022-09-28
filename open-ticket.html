@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/open-ticket.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body>
+
+    <section id="menu">
+        <div class="logo">
+            <a href="Index.html">
+                <img src="images/branchX Logo.svg" alt="logo">
+            </a>
+        </div>
+
+        <div class="items">
+            <li><a href="Index.html"><img src="images/Dashboard.svg" alt="dashboard" /> Dashboard</a></li>
+            <li><a href="employees.html"><img src="images/Employee Card.svg" alt="Employees" /> Employees</a></li>
+            <li><a href="payroll.html"><img src="images/Payroll.svg" alt="Payroll" /> Payroll</a></li>
+            <li><a href="report.html"><img src="images/Reports.svg" alt="Reports" /> Reports</a></li>
+            <li><a href="support.html"><img src="images/User Guide.svg" alt="Support" /> Support</a></li>
+            <li>
+                <div id="bottom-menu">
+                    <div class="profile">
+                        <a href="my-profile.html">
+                            <img src="images/User Profile.svg">
+                            <p class="small-body">My Profile</p>
+                        </a>
+                    </div>
+                    <a id="setting-menu" href="account-setting.html">
+                        <img src="images/Settings.svg" alt="setting"></a>
+                </div>
+            </li>
+        </div>
+
+    </section>
+
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="close-btn" class="fa fa-bars"></i>
+                </div>
+                <div class="page-title">
+                    <h6>Open Ticket</h6>
+                    <p class="sm-label">Support > Open Ticket</p>
+                </div>
+            </div>
+
+            <div class="left-icon">
+                <a href="wallet.html"><img src="images/wallet.svg" alt="wallet"></a>
+                <a href="support.html" id="notification-popup"><img src="images/notification.svg" alt="notification"></a>
+            </div>
+        </div>
+
+        <!-- ------  Card Section  ----- -->
+
+        <div class="content-section">
+            <div class="top-section">
+                <h4>Enter Ticket Details</h4>
+                <a href="my-ticket.html" id="back-btn">
+                    <img src="images/colored-arrow.svg" alt="">Back to all tickets
+                </a>
+
+            </div>
+            <div class="support-form-section">
+                <div class="support-ticket">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="support-type">Support Type</label>
+                                <select id="support-type" name="support-type">
+                                    <option value="General Support">General Support</option>
+                                    <option value="Technical Issues">Technical Issues</option>
+                                    <option value="Help with Billing" selected>Help with Billing</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="ticket-priority">Ticket Priority</label>
+                                <select id="ticket-priority" name="ticket-priority">
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                    <option value="Urgent" selected>Urgent</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="form-single-row">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="sayeedafzal1440@gmail.com">
+                        </div>
+                        <div class="form-single-row">
+                            <label for="Subject">Subject</label>
+                            <input type="Subject" id="Subject" name="Subject" placeholder="Enter ticket subject">
+                        </div>
+                        <div class="form-single-row">
+                            <label for="ticket-detail">Details</label>
+                            <!-- <input type="text" id="Details" cols="50" name="Details" placeholder="Enter ticket details."> -->
+                            <textarea rows="4" id="ticket-detail" placeholder="Enter ticket details...."></textarea>
+                        </div>
+
+                        <div class="button-wrapper">
+                            <h3>Upload File</h3>
+                            <span class="label"> Choose File </span>
+                            <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File">
+                        </div>
+
+                        <div class="submit"><button class="butn">SUBMIT TICKET</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+        <div id="popup-container">
+            <div class="close-popup">
+                <span id="close-popup-btn">close</span>
+            </div>
+            <div class="popup-top-header">
+                <h6>Notifications</h6>
+                <a href="notifications.html">View All Notifications</a>
+            </div>
+
+            <div class="popuptabs">
+                <input type="radio" id="tabfree" name="popuptabs" checked="checked">
+                <label for="tabfree">All</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">All last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" id="tabsilver" name="popuptabs">
+                <label for="tabsilver">Updates</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">Updates last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" id="tabgold" name="popuptabs">
+                <label for="tabgold">Promotions</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">Promo last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        // Vertical Tabs For Fomrs
+
+
+        const btns = document.querySelectorAll("[data-target-tab]");
+
+        btns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                btns.forEach((btn) => btn.classList.remove("active"));
+
+                const items = document.querySelectorAll(".item");
+
+                items.forEach((item) => item.classList.remove("active"));
+                btn.classList.add("active");
+                document.querySelector(btn.dataset.targetTab).classList.add("active");
+            });
+        });
+
+
+
+        // Mobile menu icons
+
+        $('#close-btn').click(function () {
+            $('#menu').toggleClass("active");
+        })
+
+
+
+        // Popup modal section
+
+        $("#notification-popup").click(function () {
+            $("#popup-container").show();
+        })
+
+        $("#close-popup-btn").click(function () {
+            $("#popup-container").hide();
+        })
+
+        // $("ul li").click(function(){
+        //     $(this).addClass("selected").siblings().
+        //     removeClass("selected");
+        //     $(".pop-title-content > p").hide();
+        //     $($(this).data("value")).fadeIn();
+        // });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/employee-overview.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    
+    <section id="menu">
+        <div class="logo">
+            <a href="Index.html">
+                <img src="images/branchX Logo.svg" alt="logo">
+            </a>
+        </div>
+
+        <div class="items">
+            <li><a href="Index.html"><img src="images/Dashboard.svg" alt="dashboard" /> Dashboard</a></li>
+            <li><a href="employees.html"><img src="images/Employee Card.svg" alt="Employees" /> Employees</a></li>
+            <li><a href="payroll.html"><img src="images/Payroll.svg" alt="Payroll" /> Payroll</a></li>
+            <li><a href="report.html"><img src="images/Reports.svg" alt="Reports" /> Reports</a></li>
+            <li><a href="support.html"><img src="images/User Guide.svg" alt="Support" /> Support</a></li>
+            <li>
+                <div id="bottom-menu">
+                    <div class="profile">
+                        <a href="my-profile.html">
+                            <img src="images/User Profile.svg">
+                            <p class="small-body">My Profile</p>
+                        </a>
+                    </div>
+                    <a id="setting-menu" href="account-setting.html">
+                        <img src="images/Settings.svg" alt="setting"></a>
+                </div>
+            </li>
+        </div>
+ 
+    </section>
+
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="close-btn" class="fa fa-bars"></i>
+                </div>
+                <div class="page-title">
+                    <h6>Employees</h6>
+                    <p class="sm-label">Employees > Sayeed Afzal</p>
+                </div>
+            </div>
+            
+            <div class="left-icon">
+                <a href="wallet.html"><img src="images/wallet.svg" alt="wallet"></a>
+                <a href="#" id="notification-popup"><img src="images/notification.svg" alt="notification"></a>
+            </div>
+        </div>
+        
+
+    <div class="content-section">
+
+    <!-- ------  Card Section  ----- -->
+
+        <div class="employee-content">
+
+            <div class="emp-table-section">
+               <div class="makepayout-top-section">
+                    <div class="id-section">
+                   <a href="employees.html">
+                    <img src="images/Arrow.svg" alt="" id="arrow"> </a>
+                        <div class="small-body">
+                            <button type="button" id="payout-id">
+                                <img src="images/wallet.svg" alt=""> ID: 10568
+                            </button>
+                        </div>
+                        <h3>Sayeed Afzal</h3>
+                    </div>
+                    <div class="top-btn-section">
+                        <div class="btn-section">
+                            <a href="#" id="migrate-btn">Migrate</a>
+                            <a href="employee-edits.html" id="edit-btn">Edit Details</a>
+                            <a href="employee-pay-slip.html" id="view-btn">View Payslips</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="employee-details">
+                <div class="professional-details">
+                    <div class="row">
+                        <p class="small-body">Professional Details</p>
+                        <img src="images/edits.svg" alt="">
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="sm-label">Emails</p>
+                        <p class="small-body">sayeed@wilsonwings.com</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Gender</p>
+                        <p class="small-body">Male</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Date of Joining</p>
+                        <p class="small-body">22/12/2020</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Designation</p>
+                        <p class="small-body">Digital Marketer</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Department</p>
+                        <p class="small-body">Marketing</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Office</p>
+                        <p class="small-body">Head Office</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <p class="large-body">Provident Fund</p>
+                        <div class="fund-switch">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="large-body">State Insurance</p>
+                        <div class="fund-switch">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="large-body">Professional Tax</p>
+                        <div class="fund-switch">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal-details">
+                    <div class="row">
+                        <p class="small-body">Personal Details</p>
+                        <img src="images/edits.svg" alt="">
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="sm-label">Personal Details</p>
+                        <p class="small-body">sayeed@wilsonwings.com</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Date of Birth</p>
+                        <p class="small-body">22/11/1995</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Father’s Name</p>
+                        <p class="small-body">Mohd Afzal Khan</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">PAN</p>
+                        <p class="small-body">BMEPA1778G</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Mobile Number</p>
+                        <p class="small-body">8073734941</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Current Address</p>
+                        <p class="small-body">#19, 1st Cross, 4th Main Road,
+                            BTM 2nd Stage, Bengaluru - 560090</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Permanent Address</p>
+                        <p class="small-body">#19, 1st Cross, 4th Main Road,
+                            BTM 2nd Stage, Bengaluru - 560090</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="employee-account-details">
+                <div class="primary-account-details">
+                    <div class="row">
+                        <p class="small-body">Primary Bank Account</p>
+                        <img src="images/edits.svg" alt="">
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="sm-label">Account Number</p>
+                        <p class="small-body">1125456165156163</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Bank Name</p>
+                        <p class="small-body">Sayeed Afzal</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Account Holder Name</p>
+                        <p class="small-body">City Union Bank</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">IIFC</p>
+                        <p class="small-body">CIUB000054</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Account Type</p>
+                        <p class="small-body">Savings</p>
+                    </div>
+                </div>
+
+                <div class="secondary-account-details">
+                    <div class="row">
+                        <p class="small-body">Secondary Bank Account</p>
+                        <img src="images/edits.svg" alt="">
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="sm-label">Account Number</p>
+                        <p class="small-body">1125456165156163</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Bank Name</p>
+                        <p class="small-body">Sayeed Afzal</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Account Holder Name</p>
+                        <p class="small-body">City Union Bank</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">IIFC</p>
+                        <p class="small-body">CIUB000054</p>
+                    </div>
+                    <div class="row">
+                        <p class="sm-label">Account Type</p>
+                        <p class="small-body">Savings</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        
+    </section>
+
+
+<!-- Notifications popup Section -->
+
+    <div id="popup-container">
+        <div class="close-popup">
+            <span id="close-popup-btn">close</span>
+        </div>
+        <div class="popup-top-header">
+            <h6>Notifications</h6>
+            <a href="notifications.html">View All Notifications</a>
+        </div>
+
+        <div class="popuptabs">
+            <input type="radio" id="tabfree" name="popuptabs" checked="checked">
+            <label for="tabfree">All</label>
+            <div class="popup-tab-content">
+                <div class="popup-notification-list">
+                    <div class="notification-list-logo">
+                        <img src="images/wallet.svg" alt="">
+                    </div>
+                    <div class="notification-list-content">
+                        <p class="sm-label">All last Payroll run was successful.</p>
+                        <p class="popup-notification-date">12 Feb</p>
+                    </div>
+                </div>
+            </div>
+        
+            <input type="radio" id="tabsilver" name="popuptabs">
+            <label for="tabsilver">Updates</label>
+            <div class="popup-tab-content">
+                <div class="popup-notification-list">
+                    <div class="notification-list-logo">
+                        <img src="images/wallet.svg" alt="">
+                    </div>
+                    <div class="notification-list-content">
+                        <p class="sm-label">Updates last Payroll run was successful.</p>
+                        <p class="popup-notification-date">12 Feb</p>
+                    </div>
+                </div>
+            </div>
+        
+            <input type="radio" id="tabgold" name="popuptabs">
+            <label for="tabgold">Promotions</label>
+            <div class="popup-tab-content">
+                <div class="popup-notification-list">
+                    <div class="notification-list-logo">
+                        <img src="images/wallet.svg" alt="">
+                    </div>
+                    <div class="notification-list-content">
+                        <p class="sm-label">Promo last Payroll run was successful.</p>
+                        <p class="popup-notification-date">12 Feb</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       
+    
+    <!-- Migrate Employee ( Epmloyee overview ) popup Section -->
+
+        <div class="popup-recharge-section">
+            <div class="popup-recharge-header">
+                <h6>Migrate Employee</h6>
+                <div class="recharge-close-popup">
+                    <span id="recharge-close-popup-btn">
+                        <img src="images/close.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="popup-recharge-content">
+                <form action="#">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="company">Select Payment Method</label>
+                            <select name="company" id="company">
+                                <option value="Company">Company One</option>
+                                <option value="Company">Company Two</option>
+                                <option value="Company">Company Three</option>
+                                <option value="Company">Company Four</option>
+                                <option value="Company">Company Five</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="migration">Migration Type</label>
+                            <select name="migration" id="migration">
+                                <option value="volvo">Migration One</option>
+                                <option value="volvo">Migration Two</option>
+                                <option value="volvo">Migration Three</option>
+                                <option value="volvo">Migration Four</option>
+                                <option value="volvo">Migration Five</option>
+                              </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit">Recharge Wallet</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    <script>
+
+        // Mobile menu icons
+
+        $('#close-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+
+
+
+        // Popup modal section
+
+        $("#notification-popup").click(function(){
+                $("#popup-container").show();
+            })
+
+        $("#close-popup-btn").click(function(){
+                $("#popup-container").hide();
+            })
+
+        // $("ul li").click(function(){
+        //     $(this).addClass("selected").siblings().
+        //     removeClass("selected");
+        //     $(".pop-title-content > p").hide();
+        //     $($(this).data("value")).fadeIn();
+        // });
+
+
+        // Migrate Employee ( Epmloyee overview ) popup Section
+
+        $("#migrate-btn").click(function(){
+                $(".popup-recharge-section").show();
+            })
+
+        $("#recharge-close-popup-btn").click(function(){
+                $(".popup-recharge-section").hide();
+            })
+
+
+    </script>
+
+</body>
+</html>

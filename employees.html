@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/employees.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    
+    <section id="menu">
+        <div class="logo">
+            <a href="Index.html">
+                <img src="images/branchX Logo.svg" alt="logo">
+            </a>
+        </div>
+
+        <div class="items">
+            <li><a href="Index.html"><img src="images/Dashboard.svg" alt="dashboard" /> Dashboard</a></li>
+            <li><a href="employees.html"><img src="images/Employee Card.svg" alt="Employees" /> Employees</a></li>
+            <li><a href="payroll.html"><img src="images/Payroll.svg" alt="Payroll" /> Payroll</a></li>
+            <li><a href="report.html"><img src="images/Reports.svg" alt="Reports" /> Reports</a></li>
+            <li><a href="support.html"><img src="images/User Guide.svg" alt="Support" /> Support</a></li>
+            <li>
+                <div id="bottom-menu">
+                    <div class="profile">
+                        <a href="my-profile.html">
+                            <img src="images/User Profile.svg">
+                            <p class="small-body">My Profile</p>
+                        </a>
+                    </div>
+                    <a id="setting-menu" href="account-setting.html">
+                        <img src="images/Settings.svg" alt="setting"></a>
+                </div>
+            </li>
+        </div>
+ 
+    </section>
+
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="close-btn" class="fa fa-bars"></i>
+                </div>
+                <div class="page-title">
+                    <h6>Employees</h6>
+                    <p class="sm-label">Employees</p>
+                </div>
+            </div>
+            
+            <div class="left-icon">
+                <a href="wallet.html"><img src="images/wallet.svg" alt="wallet"></a>
+                <a href="#" id="notification-popup"><img src="images/notification.svg" alt="notification"></a>
+            </div>
+        </div>
+        
+
+    <div class="content-section">
+
+    <!-- ------  Card Section  ----- -->
+
+        <div class="employee-content">
+
+            <div class="emp-table-section">
+                <div class="emp-top-bars">
+                    <div class="emp-select-section">
+                        <form id="emp-select">
+                            <select name="Bulk Update" id="emp-updates">
+                              <option value="volvo">Bulk Update</option>
+                              <option value="volvo">Migrate</option>
+                              <option value="saab">Download</option>
+                              <option value="opel">Terminate</option>
+                            </select>
+                          </form>
+                    </div>
+
+                    <div class="emp-search-section">
+                        <form class="emp-search">
+                            <input type="text" placeholder="Search employees by id or name" name="search2">
+                            <button id="search" type="submit"><img src="images/search.svg" alt=""></button>
+                          </form>
+                    </div>
+                      
+                </div>
+
+                <div class="emp-table">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                <div class="first-cell">
+                                    <input id="checkbox" type="checkbox">
+                                    Name
+                                </div>
+                                </th>
+                                <th>Employee ID</th>
+                                <th>Department</th>
+                                <th>Designation</th>
+                                <th>Action</th>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        Shiv Shankar 
+                                    </div>
+                                </td>
+                                <td>01</td>
+                                <td id="department">
+                                    <p id="department-cell">Accounts</p>
+                                </td>
+                                <td>Invoicer</td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-overview.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        Sayeed Afzal
+                                    </div>
+                                </td>
+                                <td>02</td>
+                                <td id="department">
+                                    <p id="department-cell">Design</p>
+                                </td>
+                                <td>UI Designer</td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-overview.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        Sayeed Afzal
+                                    </div>
+                                </td>
+                                <td>02</td>
+                                <td id="department">
+                                    <p id="department-cell">Design</p>
+                                </td>
+                                <td>UI Designer</td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-overview.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        Sayeed Afzal
+                                    </div>
+                                </td>
+                                <td>02</td>
+                                <td id="department">
+                                    <p id="department-cell">Design</p>
+                                </td>
+                                <td>UI Designer</td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-overview.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        Sayeed Afzal
+                                    </div>
+                                </td>
+                                <td>02</td>
+                                <td id="department">
+                                    <p id="department-cell">Design</p>
+                                </td>
+                                <td>UI Designer</td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-overview.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="first-cell">
+                                        <input id="checkbox" type="checkbox">
+                                        Sayeed Afzal
+                                    </div>
+                                </td>
+                                <td>02</td>
+                                <td id="department">
+                                    <p id="department-cell">Design</p>
+                                </td>
+                                <td>UI Designer</td>
+                                <td id="action-cell">
+                                    <div class="action">
+                                        <a href="employee-overview.html"><img src="images/eye.svg" alt=""></a>
+                                        <a href="#"><img src="images/show.svg" alt=""></a>
+                                    </div>
+                                </td>
+                              </tr>
+                        </thead>
+                      </table>  
+                </div>
+            </div>
+
+            <div class="emp-side-card-section">
+                <div class="add-empl">
+                    <a href="employee-add.html" id="add-emp-btn">Add Employee</a>
+                </div>
+
+                <div class="add-emp2">
+                    <a href="#" id="add-bulk-upload">Bulk Upload</a>
+                </div>
+
+                <div class="add-emp3">
+                    <a href="#" id="add-bulk-edit">Bulk Edit</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div id="popup-container">
+            <div class="close-popup">
+                <span id="close-popup-btn"><img src="images/close.svg" alt=""></span>
+            </div>
+            <div class="popup-top-header">
+                <h6>Notifications</h6>
+                <a href="notifications.html">View All Notifications</a>
+            </div>
+
+            <div class="popuptabs">
+                <input type="radio" id="tabfree" name="popuptabs" checked="checked">
+                <label for="tabfree">All</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">All last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <input type="radio" id="tabsilver" name="popuptabs">
+                <label for="tabsilver">Updates</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">Updates last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <input type="radio" id="tabgold" name="popuptabs">
+                <label for="tabgold">Promotions</label>
+                <div class="popup-tab-content">
+                    <div class="popup-notification-list">
+                        <div class="notification-list-logo">
+                            <img src="images/wallet.svg" alt="">
+                        </div>
+                        <div class="notification-list-content">
+                            <p class="sm-label">Promo last Payroll run was successful.</p>
+                            <p class="popup-notification-date">12 Feb</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+        
+    </section>
+
+            <!-- Bulk Upload employee list popup Section -->
+
+            <div class="popup-uploadEmp-section">
+                <div class="popup-uploadEmp-header">
+                    <h6>Upload Employee List</h6>
+                    <div class="uploadEmp-close-popup">
+                        <span id="uploadEmp-close-popup-btn">
+                            <img src="images/close.svg" alt=""></span>
+                    </div>
+                </div>
+                <div class="popup-uploadEmp-content">
+                    <form>
+                        <div class="upload-form-row">
+                            <label for="file"><img src="images/file_type.svg" alt=""></label>
+                            <input type="file" class="amount" id="file" placeholder="Upload your file">
+                        </div>
+                        <button type="submit" class="submit">Upload Now</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- Bulk Edit employee list popup Section -->
+
+            <div class="popup-editemp-section">
+                <div class="popup-editemp-header">
+                    <h6>Edit Employee List</h6>
+                    <div class="editemp-close-popup">
+                        <span id="editemp-close-popup-btn">
+                            <img src="images/close.svg" alt=""></span>
+                    </div>
+                </div>
+                <div class="popup-editemp-content">
+                    <form>
+                        <div class="editemp-form-row">
+                            <label for="file"><img src="images/file_type.svg" alt=""></label>
+                            <input type="file" class="amount" id="file" placeholder="Upload your file">
+                        </div>
+                        <button type="submit" class="submit">Upload Now</button>
+                    </form>
+                    <a href="#" id="download-list">Download Employee List</a>
+                </div>
+            </div>
+
+
+    <script>
+
+        // Mobile menu icons
+
+        $('#close-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+
+
+
+        // Popup modal section
+
+        $("#notification-popup").click(function(){
+                $("#popup-container").show();
+            })
+
+        $("#close-popup-btn").click(function(){
+                $("#popup-container").hide();
+            })
+
+        // $("ul li").click(function(){
+        //     $(this).addClass("selected").siblings().
+        //     removeClass("selected");
+        //     $(".pop-title-content > p").hide();
+        //     $($(this).data("value")).fadeIn();
+        // });
+
+        
+        // Bulk Upload Employee list popup Section
+
+         $("#add-bulk-upload").click(function(){
+            $(".popup-uploadEmp-section").show();
+        })
+
+        $("#uploadEmp-close-popup-btn").click(function(){
+                $(".popup-uploadEmp-section").hide();
+            })
+
+
+        // Bulk Edit Employee list popup Section
+
+        $("#add-bulk-edit").click(function(){
+            $(".popup-editemp-section").show();
+        })
+
+        $("#editemp-close-popup-btn").click(function(){
+                $(".popup-editemp-section").hide();
+            })
+
+
+    </script>
+
+</body>
+</html>
